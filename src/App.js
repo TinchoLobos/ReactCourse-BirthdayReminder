@@ -1,19 +1,12 @@
-import React, {useState} from 'react';
-import List from './List';
-import data from './data';
-
+import React from 'react';
+import List from './List'
 
 function App() {
-const [people,setPeople] = useState(data);
+
   return(
 <main>
-<section className="container">
-<h3 style={{textAlign:'center'}}>{people.length} birthdays today</h3>
-<List
-people={people}
-/>
-<button onClick={()=>{setPeople([])}}> Clear All</button>
-</section>
+<h2 style={{color:"white",paddingTop:"2rem", textAlign:'center'}}>BIRTHDAY REMINDER</h2>
+<List/> 
 </main>
   )
 } 
